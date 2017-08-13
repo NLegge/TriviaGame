@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Trivia Game</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="heading">
+			<img id="title" src="assets/images/bioshock.png">
+			<h1>TRIVIA GAME</h1>
+		</div>	
+		<div class="internalContainer">
+			<div class="start">
+				<button id="start">Start</button>
+			</div>
+			<div class="timeRemaining">
+				<p>Time Remaining: <span id="counter">30</span> Seconds</p>
+			</div>
+			<div class="question">
+				<h3>Question</h3>
+				<ul>
+					<li>answer</li>
+					<li>answer</li>
+					<li>answer</li>
+					<li>answer</li>
+				</ul>
+			</div>
+			<div class="answer hidden">
+				<h3 id="message"></h3>
+				<h4 id="correction"></h4>
+				<img src="" id="image">
+			</div>
+			<div class="summary hidden">
+				<h3>All done. Here's how you did!</h3>
+				<p>Correct Answers: <span id="correct"></span></p>
+				<p>Incorrect Answers: <span id="incorrect"></span></p>	
+				<p>Unanswered: <span id="unanswered"></span></p>
+				<button id="restart">Start Over?</button>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
