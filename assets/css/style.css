@@ -28,6 +28,7 @@ body {
 }
 .internalContainer {
 	background-image: url("../images/rust.jpg");
+	text-shadow: -7px -7px 5px black;
 	color:#c2cfc8;
 	border: 5px solid black;
 	width: 600px;
@@ -35,6 +36,9 @@ body {
 	margin: auto;
 	margin-top: 30px
 
+}
+.timeRemaining {
+	margin-top: 50px;
 }
 .hidden {
 	display: none;
@@ -56,4 +60,11 @@ li {
 	margin: auto;
 	text-align: center;
 	padding: 10px;
+}
+#start {
+	width: 200px;
+	font-size: 30px;
+	margin-top: 190px;
+	font-family: 'Limelight', cursive;
+	background-image: url("../images/concrete-texture.jpg");
 }
