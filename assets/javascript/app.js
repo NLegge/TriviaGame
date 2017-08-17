@@ -9,7 +9,7 @@ $(document).ready(function() {
   var questions = [
     {
   	  q: 'Many thematic, architectural, and plot elements were strongly inspired by what famous author?',
-  	  a: ['F. Scott Fitzgerald', 'Ayn Rand', 'Ernest Hemingway', 'Edith Wharton'],
+  	  a: ['F Scott Fitzgerald', 'Ayn Rand', 'Ernest Hemingway', 'Edith Wharton'],
   	  correctA: 'Ayn Rand',
   	  image: 'assets/images/aynRand.jpg'
     },
@@ -24,7 +24,37 @@ $(document).ready(function() {
   	  a: ['Abracadabra', 'If It Pleases', 'Would You Kindly', 'What Is Your Pleasure'],
   	  correctA: 'Would You Kindly',
   	  image: 'assets/images/wouldYouKindly.png'
-    }
+    },
+    {
+      q: 'What creature is the original source of ADAM?',
+      a: ['Sea Slug', 'Little Sister', 'Splicer', 'Brigid Tenenbaum'],
+      correctA: 'Sea Slug',
+      image: 'assets/images/seaSlug.jpg'
+    },
+    {
+      q: 'Which character is designed after a 19th century diving suit?',
+      a: ['Splicer', 'Frank Fontain', 'Big Dady', 'Handy Man'],
+      correctA: 'Big Dady',
+      image: 'assets/images/bigDaddy.jpg'
+    },
+    {
+      q: 'Bioshock is often referred to as a spiritual successor to what game?',
+      a: ['Dead Space', 'Fallout', 'Bioshock Infinite', 'System Shock 2'],
+      correctA: 'System Shock 2',
+      image: 'assets/images/systemShock.jpg'
+    },
+    {
+      q: 'Which of the following is not a plasmid?',
+      a: ['Insect Swarm', 'Blizzard', 'Incinerate', 'Cyclone Trap'],
+      correctA: 'Blizzard',
+      image: 'assets/images/winterBlast.png'
+    },
+    {
+      q: 'What holiday were Rapture citicens celebrating when the city was hurled into a state of dystopia?',
+      a: ['New Years Eve', 'Christmas', 'Fourth of July', 'Halloween'],
+      correctA: 'New Years Eve',
+      image: 'assets/images/newYears.png'
+    },
   ]
   //start game
   $('#start').on('click', function () {
