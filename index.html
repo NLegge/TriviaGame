@@ -3,6 +3,7 @@
 <head>
 	<title>Trivia Game</title>
 	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
 </head>
@@ -20,12 +21,12 @@
 				<p>Time Remaining: <span id="counter">30</span> Seconds</p>
 			</div>
 			<div class="question hidden">
-				<h3>Question</h3>
-				<ul>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
-					<li>answer</li>
+				<h3 id="ask">Question</h3>
+				<ul id="list">
+					<li><a class='choice' id='q1' href=""></a></li>
+					<li><a class='choice' id='q2' href=""></a></li>
+					<li><a class='choice' id='q3' href=""></a></li>
+					<li><a class='choice' id='q4' href=""></a></li>
 				</ul>
 			</div>
 			<div class="answer hidden">
@@ -34,7 +35,7 @@
 				<img src="" id="image">
 			</div>
 			<div class="summary hidden">
-				<h3>All done. Here's how you did!</h3>
+				<h3 id="done">All done. Here's how you did!</h3>
 				<p>Correct Answers: <span id="correct"></span></p>
 				<p>Incorrect Answers: <span id="incorrect"></span></p>	
 				<p>Unanswered: <span id="unanswered"></span></p>

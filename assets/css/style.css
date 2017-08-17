@@ -1,5 +1,7 @@
 body {
 	background-image: url("../images/rapture.jpg");
+	overflow: none;
+	background-color: black;
 }
 .container {
 	text-align: center;
@@ -39,15 +41,19 @@ body {
 }
 .timeRemaining {
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 .hidden {
 	display: none;
 }
 h3 {
 	font-size: 30px;
+	margin: 10px;
+	margin-bottom: 30px;
 }
 p {
-	font-size: 28px;
+	font-size: 22px;
+	margin: 20px;
 }
 ul {
 	list-style: none;
@@ -55,16 +61,32 @@ ul {
 	margin: auto;
 	padding: 0;
 }
-li {
+li a {
 	font-size: 20px;
 	margin: auto;
 	text-align: center;
 	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color:#c2cfc8;
 }
-#start {
+li a:hover {
+	background-color: black;
+}
+#start, #restart {
 	width: 200px;
 	font-size: 30px;
 	margin-top: 190px;
 	font-family: 'Limelight', cursive;
 	background-image: url("../images/concrete-texture.jpg");
+}
+#restart {
+	margin-top: 50px;
+}
+#image {
+	width: 400px;
+}
+#done {
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
