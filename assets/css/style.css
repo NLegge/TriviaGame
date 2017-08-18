@@ -1,6 +1,6 @@
 body {
 	background-image: url("../images/rapture.jpg");
-	overflow: none;
+	background-repeat: no-repeat;
 	background-color: black;
 }
 .container {
@@ -14,15 +14,12 @@ body {
 	width: 400px;
 }
 .heading {
-	position: relative;
 	margin: auto;
 }
 .heading h1 {
-	position: absolute;
-	z-index: 1;
 	font-size: 30px;
 	width: 300px;
-	margin-top: -10px;
+	margin-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -36,7 +33,7 @@ body {
 	width: 600px;
 	height: 450px;
 	margin: auto;
-	margin-top: 30px
+	margin-top: 10px
 
 }
 .timeRemaining {
@@ -92,12 +89,18 @@ li a:hover {
 }
 @media screen and (max-width: 768px) {
 	.internalContainer {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: black;
 		max-width: 700px;
 		width: 100%;
 		margin: auto;
 	}
 @media screen and (max-width: 640px) {
 	.internalcontent {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: black;
 		max-width: 580px;
 		width: 100%;
 		margin: auto;
