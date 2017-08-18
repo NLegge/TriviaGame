@@ -57,7 +57,7 @@ $(document).ready(function() {
     },
   ]
   $('#ambient').get(0).play();
-  //start game
+  //start button
   $('#start').on('click', function () {
     $('#piano').get(0).play();
   	$('.initiate').addClass('hidden');
@@ -65,7 +65,6 @@ $(document).ready(function() {
   	$('.question').removeClass('hidden');
   	generateQuiz();
   	startTimer();
-  	//$('#start').prop("disabled", true);
   });
   //start timer
   function startTimer () {
