@@ -9,6 +9,7 @@
 </head>
 <body>
 	<div class="container">
+		<audio id="ambient" src="assets/audio/ambientNoise.mp3"></audio>
 		<div class="heading">
 			<img id="title" src="assets/images/bioshock.png">
 			<h1>TRIVIA GAME</h1>
@@ -17,6 +18,7 @@
 			<div class="initiate">
 				<button id="start">Start</button>
 			</div>
+			<audio id="piano" src="assets/audio/start.mp3"></audio>
 			<div class="timeRemaining hidden">
 				<p>Time Remaining: <span id="counter">30</span> Seconds</p>
 			</div>
@@ -28,6 +30,8 @@
 					<li><a class='choice' id='q3' href=""></a></li>
 					<li><a class='choice' id='q4' href=""></a></li>
 				</ul>
+				<audio id="right" src="assets/audio/correct.mp3"></audio>
+				<audio id="wrong" src="assets/audio/wrong.mp3"></audio>
 			</div>
 			<div class="answer hidden">
 				<h3 id="message"></h3>

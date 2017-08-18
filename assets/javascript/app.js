@@ -56,8 +56,10 @@ $(document).ready(function() {
       image: 'assets/images/newYears.png'
     },
   ]
+  $('#ambient').get(0).play();
   //start game
   $('#start').on('click', function () {
+    $('#piano').get(0).play();
   	$('.initiate').addClass('hidden');
   	$('.timeRemaining').removeClass('hidden');
   	$('.question').removeClass('hidden');
@@ -75,6 +77,7 @@ $(document).ready(function() {
     $('#counter').html(timer);
     if (timer === 0) {
     	clearInterval(intervalId);
+      $('#wrong').get(0).play();
     	$('#message').html('Time is up!');
       $('#correction').html('The answer is ' + questions[index].correctA);
   	  $('#image').attr('src', questions[index].image);
@@ -106,12 +109,14 @@ $(document).ready(function() {
     $('.question').addClass('hidden');
     $('.answer').removeClass('hidden');
     if (userSelection === questions[index].correctA) {
+      $('#right').get(0).play();
       $('#message').html('Correct!');
-  	$('#correction').html('The answer is ' + questions[index].correctA);
-  	$('#image').attr('src', questions[index].image);
-  	correct++;
+  	  $('#correction').html('The answer is ' + questions[index].correctA);
+  	  $('#image').attr('src', questions[index].image);
+  	  correct++;
     }
     else {
+    $('#wrong').get(0).play();
   	$('#message').html('Wrong!');
   	$('#correction').html('The answer is ' + questions[index].correctA);
   	$('#image').attr('src', questions[index].image);
@@ -150,6 +155,7 @@ $(document).ready(function() {
     correct = 0;
     incorrect = 0;
     unanswered = 0;
+    $('#piano').get(0).play();
     $('.summary').addClass('hidden');
     $('.timeRemaining').removeClass('hidden');
     $('.question').removeClass('hidden');
